@@ -1,0 +1,315 @@
+* { box-sizing: border-box; }
+
+html { font-family:"Montserrat", Arial, sans-serif;
+	font-weight:400; }
+
+body { margin: 0; }
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.hover_group:hover {
+  opacity: 1;
+}
+
+#projectsvg {
+  position: relative;
+  width: 100%;
+  padding-bottom: 77%;
+  vertical-align: middle;
+  margin: 0;
+  overflow: hidden;
+}
+
+#projectsvg svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  background: url(../img/slowart_bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#countdown {
+	font-size:21px;
+	color:#333;
+	text-align:center;
+	}
+
+#canvas { position: fixed; z-index: -888; }
+
+.container {
+	width:calc(100% - 32px);
+	max-width:720px;
+	margin:0px auto;
+	min-height:100%;
+	margin-top:100px;
+	padding:1px 16px 24px;
+	background:rgba(255, 255, 255, 0.25);
+}
+
+.site-nav {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:8px 16px;
+	padding:16px 0;
+	border-bottom:1px solid rgba(16, 60, 96, 0.2);
+	scroll-margin-top:80px;
+}
+
+.site-nav a:focus-visible,
+a:focus-visible {
+	outline:2px solid #103c60;
+	outline-offset:3px;
+}
+
+h1 {
+	font-family: Playfair Display;
+	text-align:left;
+	color:#a54e30;
+	margin-top:50px;
+	scroll-margin-top:80px;
+	padding-left:20px;
+}
+
+h2 {
+	font-family: Playfair Display;
+	font-size:21px;
+	padding:10px 20px;
+	text-align:left;
+	color:#103c60;
+	margin-top:50px; }
+
+p {
+	font-size:18px;
+	line-height:2em;
+	padding:10px 20px;
+	}
+a {	color:#a54e30; text-decoration:none !important; }
+
+.quote {
+	font-family: "EB Garamond", serif;
+	position:relative;
+	isolation:isolate;
+	font-style:italic;
+	font-size:21px;
+	line-height:2em;
+	padding:16px 20px;
+	background:rgba(255, 255, 255, 0.3);
+}
+
+.quote::before {
+	content:"“";
+	font-style:normal;
+	position:absolute;
+	top:0;
+	left:12px;
+	z-index:-1;
+	color:rgba(16, 60, 96, 0.1);
+	font-family:"Playfair Display", serif;
+	font-size:200px;
+	line-height:1;
+	pointer-events:none;
+	}
+
+.menu {
+	left: 0;
+	top: 0;
+	background:#103c60;
+	line-height:50px;
+	width:100%;
+	position: fixed;
+	z-index: 999; }
+
+.centered {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	gap:16px;
+	width:100%;
+	margin:0px auto;
+	text-align:center;
+}
+
+.btn {
+	width:420px;
+	margin:0px auto;
+	border:1px solid #888;
+	text-align:center;
+	font-family:"Jura", Courier, monospace;
+	color:#888;
+	font-size:21px;
+	line-height:50px;
+	margin-top:20px;
+	}
+	
+.btn a {
+	text-decoration:none !important;
+	}
+	
+.btn:hover {
+	color:#444;
+	text-decoration:none;
+	background:rgba(0, 0, 0, 0.1);
+	}
+
+.quest {	
+	width:100%;
+	background:rgba(0, 0, 0, 0.1);
+	border-left: 5px solid #aaa;
+	font-family: Arial Black, Arial, Helvetica, sans-serif;
+	letter-spacing:-1px;
+	color:#888;
+	font-size:21px;
+	margin-top:40px;
+	padding:5px 20px;
+	}
+	
+.answ a { border:1px solid #888; padding:2px; }
+	
+.answ {	
+	width:100%;
+	font-family:"Jura", Courier, monospace;
+	color:#444;
+	border-left: 5px solid #bbb;
+	font-size:18px;
+	line-height:1.5em;
+	margin-top:5px;
+	padding:5px 20px;
+	}
+	
+footer {
+	background:rgba(0, 0, 0, 0.4);
+	font-size:14px;
+	line-height:24px;
+	text-align:center;
+	width:100%;
+	color:#ccc;
+	margin-top:50px;
+	}
+	
+footer a { color:#ccc; }
+footer a:hover { color:#fff; }
+
+audio {
+	width:300px;
+	z-index:9999;
+/*	position:fixed;
+	right:20px;
+	top:20px; */
+	opacity:0.5;
+	-moz-border-radius:20px 20px 20px 20px ;
+	-webkit-border-radius:20px 20px 20px 20px ;
+	border-radius:20px 20px 20px 20px ;
+	}
+
+.logo {
+	background:url(../img/slowart_logo.svg);
+	display:block;
+	width:180px;
+	height:50px;
+	margin:10px 0;
+	}
+
+.social-links {
+	display:flex;
+	align-items:center;
+	gap:8px;
+}
+
+.social-link {
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:40px;
+	height:40px;
+	color:#fff;
+	border-radius:4px;
+}
+
+.social-link:hover {
+	background:rgba(255, 255, 255, 0.14);
+}
+
+.social-link svg {
+	width:22px;
+	height:22px;
+}
+
+.social-link:first-child svg {
+	fill:currentColor;
+}
+
+.social-link:last-child svg {
+	fill:none;
+	stroke:currentColor;
+	stroke-width:2;
+}
+
+.social-link:last-child .instagram-dot {
+	fill:currentColor;
+	stroke:none;
+}
+
+.menu_01 {
+	background:url(../img/menu_01.svg);
+	width:50px; height:50px; margin:10px;
+	float:left;
+	}
+
+.menu_02 {
+	background:url(../img/menu_02.svg);
+	width:50px; height:50px; margin:10px;
+	float:left;
+	}
+
+.menu_03 {
+	background:url(../img/menu_03.svg);
+	width:50px; height:50px; margin:10px;
+	float:left;
+	}
+
+.menu_04 {
+	background:url(../img/menu_04.svg);
+	width:50px; height:50px; margin:10px;
+	float:left;
+	}
+
+.menu_05 {
+	background:url(../img/menu_05.svg);
+	width:50px; height:50px; margin:10px;
+	float:left;
+	}
+	
+	
+@media screen and (max-width: 767px) {
+	.container { width:calc(100% - 24px); margin-top:90px; padding:1px 12px 20px; }
+	h1 { font-size:28px; }
+	h2 { font-size:20px; padding:8px 12px; margin-top:32px; }
+	p { font-size:16px; line-height:1.75; padding:8px 12px; }
+}
