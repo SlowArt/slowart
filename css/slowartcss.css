@@ -110,6 +110,19 @@ p {
 	line-height:2em;
 	padding:10px 20px;
 	}
+
+.container-image {
+	padding:10px 0;
+	text-align:center;
+}
+
+.container-image img {
+	display:block;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
 a {	color:#a54e30; text-decoration:none !important; }
 
 .quote {
