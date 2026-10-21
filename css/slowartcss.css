@@ -278,13 +278,14 @@ audio {
 	fill:currentColor;
 }
 
-.social-link:last-child svg {
+.social-link:nth-child(2) svg,
+.social-link:nth-child(3) svg {
 	fill:none;
 	stroke:currentColor;
 	stroke-width:2;
 }
 
-.social-link:last-child .instagram-dot {
+.social-link:nth-child(2) .instagram-dot {
 	fill:currentColor;
 	stroke:none;
 }
